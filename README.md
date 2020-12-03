@@ -20,15 +20,12 @@ $ docker-compose up
 
 We can change this date as a configuration value to be injected 
 to the app in runtime so that we don't need to change the date 
-through code editing (currently i push this env file to github 
-as it doesn't hold any sensitive info, but you may need to add 
-it to .gitignore if you decided to put credentials or any 
-sensitive info in it).
+through code editing.
 
  ```console
 #/.env
 
- GITHUB_REPOS_CREATED_FROM=2019-05-05
+ GITHUB_REPOS_CREATED_FROM=2018-12-12
  ```
 
 ##This is an example of an endpoint, we have two possible parameters
