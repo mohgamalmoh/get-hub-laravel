@@ -11,7 +11,7 @@ class GitHub implements VersionControl
 public function getPopular ( $http_client , $params){
 
     $parameters = [];
-    $parameters['q'] =  'created:>' . ENV('GITHUB_REPOS_CREATED_FROM') . (!isset($params['lang']) ? '' : (' language:'.$params['lang']));
+    $parameters['q'] =  'created:>' . ENV('GITHUB_REPOS_CREATED_FROM',"2018-12-12") . (!isset($params['lang']) ? '' : (' language:'.$params['lang']));
     $parameters['sort'] = 'stars';
     $parameters['order'] = 'desc';
     $parameters['page'] = 1;
